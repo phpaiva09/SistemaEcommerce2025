@@ -35,6 +35,7 @@ db.connect(err => {
 // =============================================
 // 🔵 CONFIGS MERCADO PAGO + WHATSAPP
 // =============================================
+/*
 const MP_ACCESS_TOKEN = process.env.MP_ACCESS_TOKEN; 
 const WHATSAPP_TOKEN = process.env.WHATSAPP_TOKEN; 
 const WHATSAPP_PHONE_ID = process.env.WHATSAPP_PHONE_ID;
@@ -45,7 +46,7 @@ if (!MP_ACCESS_TOKEN || !WHATSAPP_TOKEN || !WHATSAPP_PHONE_ID) {
     console.log("WHATSAPP_TOKEN=");
     console.log("WHATSAPP_PHONE_ID=\n");
 }
-
+*/
 // =============================================
 // 🔵 ROTA: GERAR QR CODE PIX (Mercado Pago)
 // =============================================
@@ -227,3 +228,4 @@ app.post('/novo-pedido', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
+
